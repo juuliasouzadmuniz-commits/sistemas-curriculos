@@ -146,6 +146,16 @@ export default function NovoCurriculo() {
             </div>
           ))}
         </div>
+        {/* Habilidades */}
+        <div className="bg-white rounded-xl border border-slate-100 shadow-sm p-6">
+          <h2 className="font-semibold text-slate-700 mb-2">Habilidades</h2>
+          <p className="text-xs text-slate-400 mb-3">Separe as habilidades por vírgula. Ex: React, Node.js, Figma</p>
+          <input
+            {...register("habilidades")}
+            className={inputClass}
+            placeholder="React, Next.js, Tailwind CSS..."
+          />
+        </div>
 
         <button
           type="submit"
